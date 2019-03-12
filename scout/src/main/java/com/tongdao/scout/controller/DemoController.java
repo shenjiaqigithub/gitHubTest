@@ -22,6 +22,7 @@ public class DemoController {
 	}
 	@GetMapping(value="/selectById/{id}")
 	public Demo selectById(@PathVariable Integer id, HttpServletRequest request) {
+		System.out.println("hot_fix");
 		return demoService.selectOneById(id);
 	}
 }
